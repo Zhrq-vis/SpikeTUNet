@@ -8,7 +8,7 @@ class="center">
 </p>
 
 ## Usage & Model
-The usage instructions and the model we trained will be uploaded in the near future.
+The usage instructions will be uploaded in the near future.
 
 Example models we trained can be found in [Pan.Baidu](https://pan.baidu.com/s/1oYfXD-V93RpRHW7hICwIpg?pwd=6k2i)  Code: 6k2i 
 
