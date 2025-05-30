@@ -1,6 +1,13 @@
 # SpikeTUNet
 This repo holds code for "SpikeTUNet: A Spiking Neural Framework with Attention-Guided Information Bottleneck for Medical Image Segmentation"
 
+# Examples
+<p align="center">
+<img src="vis_ACDC.gif" width=100% height=40% 
+class="center">
+</p>
+
+
 ## Usage & Model
 The usage instructions and the model we trained will be uploaded in the near future.
 
