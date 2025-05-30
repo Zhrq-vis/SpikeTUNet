@@ -7,9 +7,10 @@ This repo holds code for "SpikeTUNet: A Spiking Neural Framework with Attention-
 class="center">
 </p>
 
-
 ## Usage & Model
 The usage instructions and the model we trained will be uploaded in the near future.
+
+Example models we trained can be found in [Pan.Baidu](https://pan.baidu.com/s/1oYfXD-V93RpRHW7hICwIpg?pwd=6k2i)  Code: 6k2i 
 
 ## Acknowledgement
 We are very grateful for these excellent works [EMCAD](https://github.com/SLDGroup/EMCAD), [QSD-Transformer](https://github.com/bollossom/QSD-Transformer) and [TransUNet](https://github.com/Beckschen/TransUNet), which have provided the basis for our framework.
