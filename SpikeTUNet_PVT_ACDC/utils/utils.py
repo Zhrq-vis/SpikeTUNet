@@ -225,15 +225,8 @@ def test_single_volume(image, label, net, classes, patch_size=[256, 256], test_s
         metric_list.append(calculate_metric_percase(prediction == i, label == i))
 
     if test_save_path is not None:
-        img_itk = sitk.GetImageFromArray(image.astype(np.float32))
-        prd_itk = sitk.GetImageFromArray(prediction.astype(np.float32))
-        lab_itk = sitk.GetImageFromArray(label.astype(np.float32))
-        img_itk.SetSpacing((1, 1, z_spacing))
-        prd_itk.SetSpacing((1, 1, z_spacing))
-        lab_itk.SetSpacing((1, 1, z_spacing))
-        sitk.WriteImage(prd_itk, test_save_path + '/'+case + "_pred.nii.gz")
-        sitk.WriteImage(img_itk, test_save_path + '/'+ case + "_img.nii.gz")
-        sitk.WriteImage(lab_itk, test_save_path + '/'+ case + "_gt.nii.gz")
+        np.savez_compressed(test_save_path+'/'+case,array=prediction)
+        print(test_save_path)
     return metric_list
 
 def val_single_volume(image, label, net, classes, patch_size=[256, 256], test_save_path=None, case=None, z_spacing=1):

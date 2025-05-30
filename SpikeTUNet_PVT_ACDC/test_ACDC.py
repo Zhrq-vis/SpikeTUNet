@@ -86,7 +86,7 @@ def inference(args, model, test_save_path=None):
         h, w = sampled_batch["image"].size()[2:]
         image, label, case_name = sampled_batch["image"], sampled_batch["label"], sampled_batch['case_name'][0]
         metric_i = test_single_volume(image, label, model, classes=args.num_classes, patch_size=[args.img_size, args.img_size],
-                                      case=case_name, z_spacing=args.z_spacing)
+                                      case=case_name, z_spacing=args.z_spacing, test_save_path=test_save_path)
         metric_list += np.array(metric_i)
     
     metric_list = metric_list / len(db_test)
@@ -174,7 +174,7 @@ if __name__ == "__main__":
     logging.info(str(args))
     logging.info(snapshot_name)
 
-    test_save_path = None
+    test_save_path = './prediction'
     inference(args, model, test_save_path)
 
 
